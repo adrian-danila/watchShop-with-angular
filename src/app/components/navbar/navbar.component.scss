@@ -1,8 +1,14 @@
-.navbar {
+mat-toolbar {
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
+    .wrapper {
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
     span {
         font-size: 13px;
         font-weight: 500;
