@@ -1,0 +1,16 @@
+mat-card {
+    width: 210px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 210px;
+        height: 150px;
+    }
+
+    mat-card-content {
+        font-size: 13px;
+    }
+}

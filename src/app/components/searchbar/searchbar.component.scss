@@ -1,0 +1,12 @@
+.container {
+    height: 70px;
+    width: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    mat-form-field {
+        width: 200px;
+    }
+}
