@@ -27,6 +27,8 @@ import { CardComponent } from './components/card/card.component';
 import { BannerV2Component } from './components/banner-v2/banner-v2.component';
 import { SmallBannerComponent } from './components/small-banner/small-banner.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { SectionCarouselOneComponent } from './components/section-carousel-one/section-carousel-one.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginFormComponent },
@@ -50,7 +52,9 @@ const routes: Routes = [
     CardComponent,
     BannerV2Component,
     SmallBannerComponent,
-    FooterComponent
+    FooterComponent,
+    SearchbarComponent,
+    SectionCarouselOneComponent
   ],
   imports: [
     BrowserModule,
