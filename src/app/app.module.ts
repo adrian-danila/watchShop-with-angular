@@ -13,6 +13,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { HeaderComponent } from './components/header/header.component';
+import { CardProductComponent } from './components/card-product/card-product.component';
+import { ProductsComponent } from './components/products/products.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BannerV1Component } from './components/banner-v1/banner-v1.component';
+
+
 
 const routes: Routes = [
   {path: 'login', component: LoginFormComponent},
@@ -24,7 +34,16 @@ const routes: Routes = [
     AppComponent,
     LoginFormComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    CardProductComponent,
+    ProductsComponent,
+    NavbarComponent,
+    ProductDetailsComponent,
+    HeaderComponent,
+    DashboardComponent,
+    BannerV1Component
+    
+
   ],
   imports: [
     BrowserModule,
@@ -34,6 +53,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     MatCardModule,
     MatFormFieldModule,
+    MatToolbarModule,
     MatInputModule,
     MatButtonModule,
     RouterModule,
