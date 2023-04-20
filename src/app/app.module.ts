@@ -21,12 +21,16 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BannerV1Component } from './components/banner-v1/banner-v1.component';
-
-
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { MatIconModule } from '@angular/material/icon';
+import { CardComponent } from './components/card/card.component';
+import { BannerV2Component } from './components/banner-v2/banner-v2.component';
+import { SmallBannerComponent } from './components/small-banner/small-banner.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
-  {path: 'login', component: LoginFormComponent},
-  {path: 'register', component: RegisterComponent}
+  { path: 'login', component: LoginFormComponent },
+  { path: 'register', component: RegisterComponent },
 ];
 
 @NgModule({
@@ -41,9 +45,12 @@ const routes: Routes = [
     ProductDetailsComponent,
     HeaderComponent,
     DashboardComponent,
-    BannerV1Component
-    
-
+    BannerV1Component,
+    CarouselComponent,
+    CardComponent,
+    BannerV2Component,
+    SmallBannerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -56,11 +63,12 @@ const routes: Routes = [
     MatToolbarModule,
     MatInputModule,
     MatButtonModule,
+    MatIconModule,
     RouterModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   exports: [RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

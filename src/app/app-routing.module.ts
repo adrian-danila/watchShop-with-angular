@@ -6,7 +6,6 @@ import { HomeComponent } from './home/home.component';
 import { SitemapComponent } from './components/sitemap/sitemap.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
-import { HeaderComponent } from './components/header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
@@ -16,7 +15,7 @@ const routes: Routes = [
   {path: 'site-map', component: SitemapComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'product-details', component: ProductDetailsComponent},
-  {path: 'dashboard', component: DashboardComponent}
+  {path: 'dashboard', component: DashboardComponent},
 ];
 
 @NgModule({
