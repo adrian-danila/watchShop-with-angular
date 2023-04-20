@@ -1,0 +1,26 @@
+.wrapper {
+    width: auto;
+    height: 600px;
+    background-color: whitesmoke;
+    padding: 50px;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        p:first-child {
+            text-transform: uppercase;
+            color: black;
+            font-size: 16px;
+            font-weight: 200;
+        }
+
+        p:nth-of-type(2) {
+            color: var(--customGray);
+            font-size: 15px;
+            font-weight: 200;
+        }
+    }
+}
