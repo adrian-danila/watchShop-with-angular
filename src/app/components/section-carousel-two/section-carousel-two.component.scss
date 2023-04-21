@@ -1,0 +1,39 @@
+.wrapper {
+    width: auto;
+    height: 610px;
+    background-color: whitesmoke;
+    padding: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        p:first-child {
+            text-transform: uppercase;
+            color: black;
+            font-size: 16px;
+            font-weight: 200;
+        }
+
+        p:nth-of-type(2) {
+            color: var(--customGray);
+            font-size: 15px;
+            font-weight: 200;
+        }
+    }
+
+    .carousel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+            font-size: 35px;
+        }
+    }
+}

@@ -4,9 +4,9 @@
 }
 mat-card {
     width: 210px;
-    height: 350px;
+    height: 325px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 
     img {
@@ -14,7 +14,23 @@ mat-card {
         height: 150px;
     }
 
+    mat-card-title {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
     mat-card-content {
         font-size: 13px;
+        display: flex;
+        text-align: center;
+        font-weight: 200;
+    }
+    
+    .wrapper {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

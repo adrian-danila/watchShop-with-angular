@@ -1,0 +1,36 @@
+.wrapper {
+    width: auto;
+    height: auto 550px;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 3px solid green;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        p:first-child {
+            text-transform: uppercase;
+            color: black;
+            font-size: 16px;
+            font-weight: 200;
+        }
+
+        p:nth-of-type(2) {
+            color: var(--customGray);
+            font-size: 15px;
+            font-weight: 200;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
