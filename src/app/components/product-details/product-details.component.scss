@@ -1,0 +1,41 @@
+.container-first {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
+.details-info {
+    width: 400px;
+    height: 400px;
+    border: 2px solid blue;
+}
+.wrapper {
+    width: 650px;
+    border: 3px solid green;
+}
+.wrapper-images {
+    display: flex;
+    flex-direction: column;
+}
+.big-image img {
+    width: 600px;
+    height: 450px;
+}
+.images img {
+    width: 150px;
+    height: 150px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-info {
+    padding: 10px;
+}
