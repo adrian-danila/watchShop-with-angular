@@ -29,6 +29,11 @@ import { SmallBannerComponent } from './components/small-banner/small-banner.com
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { SectionCarouselOneComponent } from './components/section-carousel-one/section-carousel-one.component';
+import { SectionCarouselTwoComponent } from './components/section-carousel-two/section-carousel-two.component';
+import { CardV2Component } from './components/card-v2/card-v2.component';
+import { SectionThreeComponent } from './components/section-three/section-three.component';
+import { CardV3Component } from './components/card-v3/card-v3.component';
+import { BreadcrumbMenuComponent } from './components/breadcrumb-menu/breadcrumb-menu.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginFormComponent },
@@ -54,7 +59,12 @@ const routes: Routes = [
     SmallBannerComponent,
     FooterComponent,
     SearchbarComponent,
-    SectionCarouselOneComponent
+    SectionCarouselOneComponent,
+    SectionCarouselTwoComponent,
+    CardV2Component,
+    SectionThreeComponent,
+    CardV3Component,
+    BreadcrumbMenuComponent
   ],
   imports: [
     BrowserModule,
