@@ -36,6 +36,8 @@ import { CardV3Component } from './components/card-v3/card-v3.component';
 import { BreadcrumbMenuComponent } from './components/breadcrumb-menu/breadcrumb-menu.component';
 import { MatTableModule } from '@angular/material/table';
 import { TableInfoComponent } from './components/table-info/table-info.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 const routes: Routes = [
   { path: 'login', component: LoginFormComponent },
@@ -68,6 +70,7 @@ const routes: Routes = [
     CardV3Component,
     BreadcrumbMenuComponent,
     TableInfoComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,
@@ -84,6 +87,7 @@ const routes: Routes = [
     RouterModule,
     RouterModule.forRoot(routes),
     MatTableModule,
+    MatExpansionModule,
   ],
   exports: [RouterModule],
   providers: [],
