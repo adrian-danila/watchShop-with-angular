@@ -34,6 +34,8 @@ import { CardV2Component } from './components/card-v2/card-v2.component';
 import { SectionThreeComponent } from './components/section-three/section-three.component';
 import { CardV3Component } from './components/card-v3/card-v3.component';
 import { BreadcrumbMenuComponent } from './components/breadcrumb-menu/breadcrumb-menu.component';
+import { MatTableModule } from '@angular/material/table';
+import { TableInfoComponent } from './components/table-info/table-info.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginFormComponent },
@@ -64,7 +66,8 @@ const routes: Routes = [
     CardV2Component,
     SectionThreeComponent,
     CardV3Component,
-    BreadcrumbMenuComponent
+    BreadcrumbMenuComponent,
+    TableInfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,6 +83,7 @@ const routes: Routes = [
     MatIconModule,
     RouterModule,
     RouterModule.forRoot(routes),
+    MatTableModule,
   ],
   exports: [RouterModule],
   providers: [],
