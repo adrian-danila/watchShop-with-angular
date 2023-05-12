@@ -38,6 +38,8 @@ import { MatTableModule } from '@angular/material/table';
 import { TableInfoComponent } from './components/table-info/table-info.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSelectModule } from '@angular/material/select';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 const routes: Routes = [
   { path: 'login', component: LoginFormComponent },
@@ -88,6 +90,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     MatTableModule,
     MatExpansionModule,
+    MatSelectModule,
+    MatPaginatorModule,
   ],
   exports: [RouterModule],
   providers: [],

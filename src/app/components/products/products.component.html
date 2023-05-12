@@ -2,18 +2,54 @@
 <app-navbar></app-navbar>
 <app-searchbar></app-searchbar>
 <div class="container">
-<app-filter></app-filter>
-    <div class="wrapper">
-        <app-card-product></app-card-product>
-        <app-card-product></app-card-product>
-        <app-card-product></app-card-product>
-        <app-card-product></app-card-product>
-        <app-card-product></app-card-product>
-        <app-card-product></app-card-product>
-        <app-card-product></app-card-product>
-        <app-card-product></app-card-product>
-        <app-card-product></app-card-product>
+  <app-filter></app-filter>
+  <div class="wrapper-cards">
+    <h1>Browsing products for Rolex - 300 results</h1>
+    <div class="wrapper-sort-results">
+      <div class="sort">
+        <h4>Sort By</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Default</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let price of prices" [value]="price.value">
+              {{ price.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="results">
+        <h4>Results per page</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Default</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let result of results" [value]="result.value">
+              {{ result.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
     </div>
+    <div class="wrapper">
+      <app-card-product></app-card-product>
+      <app-card-product></app-card-product>
+      <app-card-product></app-card-product>
+      <app-card-product></app-card-product>
+      <app-card-product></app-card-product>
+      <app-card-product></app-card-product>
+      <app-card-product></app-card-product>
+      <app-card-product></app-card-product>
+      <app-card-product></app-card-product>
+    </div>
+      <div class="paginator">
+        <mat-paginator
+          [length]="100"
+          [pageSize]="10"
+          [pageSizeOptions]="[5, 10, 25,50, 100]"
+          aria-label="Select page"
+        >
+        </mat-paginator>
+      </div>
+  </div>
 </div>
 
 <app-small-banner></app-small-banner>
