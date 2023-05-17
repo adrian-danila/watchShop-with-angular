@@ -4,7 +4,7 @@
             <mat-card-title>SignUp</mat-card-title>
         </mat-card-header>
         
-            <form [formGroup]="registerForm">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
                 <mat-card-content>
                 <mat-form-field apperance="outline" hideRequiredMarker="true">
                     <mat-label>Email</mat-label>
@@ -30,7 +30,7 @@
                     <input
                     matInput
                     type="password"
-                    formControlName="password"
+                    formControlName="confirmPassword"
                     required
                     />
                 </mat-form-field>
