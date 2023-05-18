@@ -1,51 +1,83 @@
-    <mat-card class="filter">
-        <div class="filter-results">
+<mat-card class="filter">
+  <div class="filter-results">
     <h1>Filter Results</h1>
-        </div>
-        <mat-accordion>
-            <mat-expansion-panel expanded="true" (opened)="panelOpenState = true"
-                                 (closed)="panelOpenState = false">
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                  Model
-                </mat-panel-title>
-                <mat-panel-description>
-                  (4)
-                </mat-panel-description>
-              </mat-expansion-panel-header>
-              <input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label>
-              <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-              <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-              <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-            </mat-expansion-panel>
-            <mat-expansion-panel hideToggle>
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                  Brand
-                </mat-panel-title>
-    
-              </mat-expansion-panel-header>
-              <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-              <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-              <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-              <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-            </mat-expansion-panel>
+  </div>
+  <mat-accordion>
+    <mat-expansion-panel
+      expanded="true"
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> Model </mat-panel-title>
+        <mat-panel-description> (4) </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="checkbox-group">
+        <input type="checkbox" id="pulsar" /><label for="pulsar">Pulsar</label>
+        <p>
+          <input type="checkbox" id="pulsar" /><label for="pulsar"
+            >Pulsar</label
+          >
+        </p>
+        <p>
+          <input type="checkbox" id="pulsar" /><label for="pulsar"
+            >Pulsar</label
+          >
+        </p>
+        <p>
+          <input type="checkbox" id="pulsar" /><label for="pulsar"
+            >Pulsar</label
+          >
+        </p>
+      </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Brand </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="checkbox-group">
+        <input type="checkbox" id="pulsar" /><label for="pulsar">Pulsar</label>
+        <p>
+          <input type="checkbox" id="pulsar" /><label for="pulsar"
+            >Pulsar</label
+          >
+        </p>
+        <p>
+          <input type="checkbox" id="pulsar" /><label for="pulsar"
+            >Pulsar</label
+          >
+        </p>
+        <p>
+          <input type="checkbox" id="pulsar" /><label for="pulsar"
+            >Pulsar</label
+          >
+        </p>
+      </div>
+    </mat-expansion-panel>
 
-            <mat-expansion-panel hideToggle>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    Gender
-                  </mat-panel-title>
-                  <mat-panel-description>
-                    (3)
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-                <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-                <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-                <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-                <p><input type="checkbox" id="pulsar"><label for="pulsar">Pulsar</label></p>
-              </mat-expansion-panel>
-
-            
-          </mat-accordion>
-    </mat-card>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Gender </mat-panel-title>
+        <mat-panel-description> (3) </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="checkbox-group">
+        <input type="checkbox" id="pulsar" /><label for="pulsar">Pulsar</label>
+        <p>
+          <input type="checkbox" id="pulsar" /><label for="pulsar"
+            >Pulsar</label
+          >
+        </p>
+        <p>
+          <input type="checkbox" id="pulsar" /><label for="pulsar"
+            >Pulsar</label
+          >
+        </p>
+        <p>
+          <input type="checkbox" id="pulsar" /><label for="pulsar"
+            >Pulsar</label
+          >
+        </p>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>

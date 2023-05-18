@@ -1,14 +1,11 @@
 .filter {
-    height: 400px;
-    width: 300px;
-    // border: 1px solid green;
-    background-color: #F6F9FB;
-    margin: 20px;
-    padding: 10px;
+  height: 400px;
+  width: 300px;
+  background-color: #f6f9fb;
+  margin: 20px;
+  padding: 10px;
 
-    input {
-        gap: 5px;
-    }
-
-
+  .checkbox-group {
+    gap: 5px;
+  }
 }
