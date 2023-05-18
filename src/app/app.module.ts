@@ -12,21 +12,20 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './shared/header/header.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
-import { ProductsComponent } from './components/products/products.component';
+import { ProductsComponent } from './pages/products/products.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ProductDetailsComponent } from './components/product-details/product-details.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BannerV1Component } from './components/banner-v1/banner-v1.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { MatIconModule } from '@angular/material/icon';
 import { CardComponent } from './components/card/card.component';
 import { BannerV2Component } from './components/banner-v2/banner-v2.component';
 import { SmallBannerComponent } from './components/small-banner/small-banner.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { SectionCarouselOneComponent } from './components/section-carousel-one/section-carousel-one.component';
 import { SectionCarouselTwoComponent } from './components/section-carousel-two/section-carousel-two.component';
@@ -51,7 +50,6 @@ const routes: Routes = [
     AppComponent,
     LoginFormComponent,
     RegisterComponent,
-    HomeComponent,
     CardProductComponent,
     ProductsComponent,
     NavbarComponent,

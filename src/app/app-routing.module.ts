@@ -2,11 +2,10 @@ import { LoginFormComponent } from './auth-components/login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './auth-components/register/register/register.component';
-import { HomeComponent } from './home/home.component';
-import { SitemapComponent } from './components/sitemap/sitemap.component';
-import { ProductsComponent } from './components/products/products.component';
-import { ProductDetailsComponent } from './components/product-details/product-details.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { SitemapComponent } from './pages/sitemap/sitemap.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path: '', component: DashboardComponent},
