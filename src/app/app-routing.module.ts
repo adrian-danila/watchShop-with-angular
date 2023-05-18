@@ -9,7 +9,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', component: DashboardComponent},
   {path: 'login', component: LoginFormComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'site-map', component: SitemapComponent},

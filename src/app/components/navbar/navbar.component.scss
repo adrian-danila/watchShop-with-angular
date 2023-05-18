@@ -1,9 +1,9 @@
 mat-toolbar {
-  background-color: white;
-  display: flex;
-  justify-content: center;
   height: 60px;
   width: auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
 
   .wrapper {
     width: 1000px;
