@@ -2,7 +2,6 @@ mat-card {
     width: 210px;
     height: 400px;
     display: flex;
-    // justify-content: center;
     align-items: center;
 
     img {
@@ -15,7 +14,7 @@ mat-card {
         font-weight: 300;
     }
 
-    .section-two {
+    .card-section {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,7 +22,7 @@ mat-card {
         height: calc(100% - 250px - 13px);
     }
 
-    button {
+    .view-more-button {
         color: var(--customGray);
         text-transform: uppercase;
         font-size: 13px;
