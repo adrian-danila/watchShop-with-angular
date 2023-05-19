@@ -49,10 +49,7 @@ const shopRoutes: Routes = [{ path: 'products', component: ProductsComponent }];
     BreadcrumbMenuComponent,
     TableInfoComponent,
     CardComponent,
-    CardV3Component
-
-
-
+    CardV3Component,
   ],
   imports: [
     CommonModule,
