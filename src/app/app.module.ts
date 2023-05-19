@@ -7,7 +7,7 @@ import { RegisterComponent } from './auth-components/register/register/register.
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { ProductsComponent } from './pages/products/products.component';
@@ -29,12 +29,7 @@ import { CardV3Component } from './components/card-v3/card-v3.component';
 import { BreadcrumbMenuComponent } from './components/breadcrumb-menu/breadcrumb-menu.component';
 import { TableInfoComponent } from './components/table-info/table-info.component';
 import { FilterComponent } from './components/filter/filter.component';
-import { AngularMaterialModule } from './modules/angular-material/angular-material/angular-material.module';
-
-const routes: Routes = [
-  { path: 'login', component: LoginFormComponent },
-  { path: 'register', component: RegisterComponent },
-];
+import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -70,8 +65,6 @@ const routes: Routes = [
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule,
-    RouterModule.forRoot(routes),
   ],
   exports: [RouterModule],
   providers: [],
