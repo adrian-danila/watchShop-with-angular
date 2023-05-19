@@ -7,12 +7,7 @@ import { RegisterComponent } from './auth-components/register/register/register.
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatCardModule } from '@angular/material/card';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
 import { RouterModule, Routes } from '@angular/router';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './shared/header/header.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { ProductsComponent } from './pages/products/products.component';
@@ -21,7 +16,6 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BannerV1Component } from './components/banner-v1/banner-v1.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { MatIconModule } from '@angular/material/icon';
 import { CardComponent } from './components/card/card.component';
 import { BannerV2Component } from './components/banner-v2/banner-v2.component';
 import { SmallBannerComponent } from './components/small-banner/small-banner.component';
@@ -33,12 +27,9 @@ import { CardV2Component } from './components/card-v2/card-v2.component';
 import { SectionThreeComponent } from './components/section-three/section-three.component';
 import { CardV3Component } from './components/card-v3/card-v3.component';
 import { BreadcrumbMenuComponent } from './components/breadcrumb-menu/breadcrumb-menu.component';
-import { MatTableModule } from '@angular/material/table';
 import { TableInfoComponent } from './components/table-info/table-info.component';
 import { FilterComponent } from './components/filter/filter.component';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatSelectModule } from '@angular/material/select';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { AngularMaterialModule } from './modules/angular-material/angular-material/angular-material.module';
 
 const routes: Routes = [
   { path: 'login', component: LoginFormComponent },
@@ -73,23 +64,14 @@ const routes: Routes = [
     FilterComponent,
   ],
   imports: [
+    AngularMaterialModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatToolbarModule,
-    MatInputModule,
-    MatButtonModule,
-    MatIconModule,
     RouterModule,
     RouterModule.forRoot(routes),
-    MatTableModule,
-    MatExpansionModule,
-    MatSelectModule,
-    MatPaginatorModule,
   ],
   exports: [RouterModule],
   providers: [],
