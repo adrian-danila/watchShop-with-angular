@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ShopModule } from './modules/shop/shop.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ShopModule } from './modules/shop/shop.module';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   exports: [RouterModule],
   providers: [],

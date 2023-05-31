@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 
 interface Price {
@@ -28,4 +29,12 @@ export class ProductsComponent {
     {value: 100, viewValue: 100},
     {value: 150, viewValue: 150}
   ]
+
+  posts: any[] = [];
+  constructor(private http: HttpClient) {
+    http.get('https://api.escuelajs.co/api/v1/products')
+    .subscribe(response => {
+  this.posts;
+    });
+  }
 }
