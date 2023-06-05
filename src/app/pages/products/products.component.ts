@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
+import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { map} from 'rxjs/operators';
+import { Product } from 'src/app/model/products';
 
 interface Price {
   value: string;
@@ -17,7 +18,25 @@ interface Result {
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
-export class ProductsComponent {
+
+
+export class ProductsComponent implements OnInit {
+  allProducts: Product[] = [];
+
+  constructor(private http: HttpClient) {
+
+  }
+
+  ngOnInit() {
+    this.fetchProducts();
+  }
+
+  onProductFetch() {
+    this.fetchProducts();
+  }
+
+ 
+
   prices: Price[] = [
     {value: 'low-0', viewValue: 'Price: Low-High'},
     {value: 'high', viewValue: 'Price: High-Low'},
@@ -30,11 +49,42 @@ export class ProductsComponent {
     {value: 150, viewValue: 150}
   ]
 
-  posts: any[] = [];
-  constructor(private http: HttpClient) {
-    http.get('https://api.escuelajs.co/api/v1/products')
-    .subscribe(response => {
-  this.posts;
-    });
+  // posts: any[] = [];
+  // constructor(private http: HttpClient) {
+  //   http.get('https://api.escuelajs.co/api/v1/products')
+  //   .subscribe(response => {
+  // this.posts;
+  //   });
+  // }
+
+  onProductCreate(products: { title: string;
+    price: number;
+    description: string;
+    image: string;
+    id?: string;}){
+      console.log(products);
+      const headers = new HttpHeaders({'myHeader': 'WatchShop'});
+      this.http.post('https://fakestoreapi.com/products', products,{headers: headers})
+      .subscribe((res) => {
+        console.log(res);
+      })
+    }
+
+  private fetchProducts() {
+    this.http.get<{[key:string]: Product}>('https://fakestoreapi.com/products')
+    .pipe(map((res)=>{
+      const products = [];
+      for(const key in res){
+        if(res.hasOwnProperty(key)){
+          products.push({...res[key], id: key})
+        }
+      }
+      return products;
+    }))
+    .subscribe((products) => {
+      console.log(products);
+      this.allProducts = products;
+    })
   }
+
 }
