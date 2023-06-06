@@ -1,18 +1,20 @@
 .container {
     display: flex;
     flex-direction: row;
+    background-color: wheat;
 
     .wrapper-sort-results {
         display: flex;
         gap: 10px; 
     }
+ 
+    .wrapper-products {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        // border: 2px solid red;
+        flex-wrap: wrap;
+    }
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    // border: 2px solid red;
-    flex-wrap: wrap;
-}

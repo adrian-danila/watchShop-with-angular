@@ -29,8 +29,8 @@
         </mat-form-field>
       </div>
     </div>
-    <div class="wrapper" *ngFor="let product of allProducts">
-      <app-card-product [product]="product"></app-card-product>
+      <div class="wrapper-products">
+        <app-card-product *ngFor="let product of allProducts" [product]="product"></app-card-product>
     </div>
       <div class="paginator">
         <mat-paginator>

@@ -49,14 +49,6 @@ export class ProductsComponent implements OnInit {
     {value: 150, viewValue: 150}
   ]
 
-  // posts: any[] = [];
-  // constructor(private http: HttpClient) {
-  //   http.get('https://api.escuelajs.co/api/v1/products')
-  //   .subscribe(response => {
-  // this.posts;
-  //   });
-  // }
-
   onProductCreate(products: { title: string;
     price: number;
     description: string;
@@ -66,7 +58,7 @@ export class ProductsComponent implements OnInit {
       const headers = new HttpHeaders({'myHeader': 'WatchShop'});
       this.http.post('https://fakestoreapi.com/products', products,{headers: headers})
       .subscribe((res) => {
-        console.log(res);
+        // console.log(res);
       })
     }
 
