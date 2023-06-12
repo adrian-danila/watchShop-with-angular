@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "watchshop-a"
+  },
+  "targets": {
+    "watchshop-a": {
+      "hosting": {
+        "watchshop": [
+          "watchshop-a"
+        ]
+      }
+    }
+  }
+}
