@@ -11,9 +11,7 @@
         <mat-form-field appearance="fill">
           <mat-label>Default</mat-label>
           <mat-select>
-            <mat-option *ngFor="let price of prices" [value]="price.value">
-              {{ price.viewValue }}
-            </mat-option>
+            <mat-option> product.price </mat-option>
           </mat-select>
         </mat-form-field>
       </div>
@@ -22,25 +20,23 @@
         <mat-form-field appearance="fill">
           <mat-label>Default</mat-label>
           <mat-select>
-            <mat-option *ngFor="let result of results" [value]="result.value">
-              {{ result.viewValue }}
-            </mat-option>
+            <mat-option> result.viewValue </mat-option>
           </mat-select>
         </mat-form-field>
       </div>
     </div>
-      <div class="wrapper-products">
-        <app-card-product *ngFor="let product of allProducts" [product]="product"></app-card-product>
+    <div class="wrapper-products">
+      <app-card-product
+        *ngFor="let item of fetchedData"
+        [item]="item"
+      ></app-card-product>
     </div>
-      <div class="paginator">
-        <mat-paginator>
-          [length]="100"
-          [pageSize]="10"
-          [pageSizeOptions]="[5, 10, 25,50, 100]"
-          aria-label="Select page"
-        >
-        </mat-paginator>
-      </div>
+    <div class="paginator">
+      <mat-paginator>
+        [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25,50, 100]"
+        aria-label="Select page" >
+      </mat-paginator>
+    </div>
   </div>
 </div>
 
