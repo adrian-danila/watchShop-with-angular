@@ -3,18 +3,25 @@
     flex-direction: row;
     background-color: #fafafa;
 
+    .wrapper-cards {
+        h1 {
+            margin-left: 20px;
+        }
+    }
+
     .wrapper-sort-results {
         display: flex;
         gap: 10px; 
+        margin-left: 20px;
     }
- 
+
     .wrapper-products {
-        display: flex;
-        flex-direction: row;
+        // border: 1px solid blue;
         justify-content: center;
-        gap: 20px;
-        // border: 2px solid red;
+        display: flex;
         flex-wrap: wrap;
+        gap: 20px;
     }
+
 }
 

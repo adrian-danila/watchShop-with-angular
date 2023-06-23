@@ -1,10 +1,10 @@
-<mat-card class="card-product">
+<mat-card *ngIf="productData" class="card-product">
     <div class="wrapper-image">
-        <img mat-card-image [src]="product.image" alt="image">
+        <img mat-card-image [src]="item.photos[0]" alt="image">
     </div>
     <div class="card-info">
-        <mat-card-title class="product-title"> {{ product.title }} </mat-card-title>
-        <mat-card-title class="product-price">{{ product.price }} lei</mat-card-title>
+        <mat-card-title class="product-title"> {{item.name}} </mat-card-title>
+        <mat-card-title class="product-price"> {{item.price}} lei</mat-card-title>
     </div>
    <mat-card-actions class="card-actions">
     <button mat-flat-button class="action-button">View details</button>
