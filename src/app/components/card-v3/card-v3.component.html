@@ -1,8 +1,6 @@
-<div class="container">
+<div class="container" *ngIf="productData">
   <mat-card>
-    <img src="/assets/images/hand-watch.png" />
+    <img [src]="item.photos[1]" />
   </mat-card>
-  <mat-card-subtitle
-    >Heading for related story will display here</mat-card-subtitle
-  >
+  <mat-card-subtitle> {{ item.name }}</mat-card-subtitle>
 </div>

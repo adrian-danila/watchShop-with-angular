@@ -2,10 +2,7 @@
     <span class="material-symbols-outlined">
         arrow_back
         </span>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+    <app-card *ngFor="let item of fetchedData | slice:0:4" [item]="item"></app-card>
     <span class="material-symbols-outlined">
         arrow_forward
         </span>

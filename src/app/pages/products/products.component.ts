@@ -7,14 +7,13 @@ import { DataService } from 'src/app/services/data/data.service';
   styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent implements OnInit {
-  fetchedData: any[];
+  fetchedData: any[] = [];
 
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     this.dataService.fetchData().subscribe((data) => {
       this.fetchedData = data;
-      // console.log(this.fetchedData);
     });
   }
 }

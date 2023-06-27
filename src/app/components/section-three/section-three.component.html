@@ -4,14 +4,7 @@
       <p>Subtitle with a call to action label goes here.</p>
     </div>
     <div class="container">
-      <app-card-v3></app-card-v3>
-      <app-card-v3></app-card-v3>
-      <app-card-v3></app-card-v3>
-      <app-card-v3></app-card-v3>
-      <app-card-v3></app-card-v3>
-      <app-card-v3></app-card-v3>
-      <app-card-v3></app-card-v3>
-      <app-card-v3></app-card-v3>
+      <app-card-v3 *ngFor="let item of fetchedData | slice:0:8" [item]="item"></app-card-v3>
     </div>
   </div>
   

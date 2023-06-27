@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-v3',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-v3.component.scss']
 })
 export class CardV3Component {
+  @Input() item: any;
 
+  productData: any = [];
 }
