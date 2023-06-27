@@ -7,7 +7,7 @@
     <div class="wrapper">
       <div class="wrapper-images">
         <div class="big-image">
-          <img src="/assets/images/green-watch.png" />
+          <img [src]="product.photos" />
         </div>
         <div class="images">
           <img src="/assets/images/hand-watch.png" />
@@ -19,14 +19,7 @@
 
       <div class="product-details">
         <h4>Details</h4>
-        <p>
-          Launched in 1956, the Day Date made its debut as the first waterproof
-          and self winding chronometre swritwatch to offer a moden calendar with
-          an instantneous day d isplay, spelt out in a full in a window on the
-          dial, in additon to the date.
-          <br>
-          The exceptional precision, reliability, legibility and presence of this prestigious model has made it the ultimate status watch.
-        </p>
+        <p>{{product.description}}</p>
       </div>
 
       <div class="product-info">
@@ -36,8 +29,8 @@
     </div>
     <div class="details-info">
       <div class="wrapper-info">
-        <p>Rolex Day-Date 36</p>
-        <p>$21.000.00</p>
+        <p>{{product.name}}</p>
+        <p>{{product.price}} lei</p>
         <button>Add to my cart</button>
         <p>Details</p>
         <p>Info & Stats</p>

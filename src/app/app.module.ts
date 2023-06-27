@@ -11,7 +11,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { ShopModule } from './modules/shop/shop.module';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
-import { AngularFireModule } from '@angular/fire/compat'; 
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [

@@ -1,6 +1,8 @@
 <div class="container" *ngIf="productData">
+  <a [routerLink]="['/product-details', item.id]">
   <mat-card>
     <img [src]="item.photos[1]" />
   </mat-card>
   <mat-card-subtitle> {{ item.name }}</mat-card-subtitle>
+</a>
 </div>

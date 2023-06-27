@@ -8,7 +8,6 @@ import { DataService } from 'src/app/services/data/data.service';
 })
 export class SectionThreeComponent implements OnInit {
   fetchedData: any[] = [];
-
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {

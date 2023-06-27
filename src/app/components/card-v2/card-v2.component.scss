@@ -20,12 +20,23 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
-    }
+      width: 210px;
+      height: 325px;
+  
+
 
     mat-card-title {
+      width: 210px;
+      padding-left: 10px;
+      padding-right: 10px;
       font-size: 13px;
       font-weight: 600;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
+
+  }
 
     mat-card-content {
       font-size: 13px;

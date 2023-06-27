@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-v2',
   templateUrl: './card-v2.component.html',
-  styleUrls: ['./card-v2.component.scss']
+  styleUrls: ['./card-v2.component.scss'],
 })
 export class CardV2Component {
+@Input() item:any;
 
+productData: any = [];
 }

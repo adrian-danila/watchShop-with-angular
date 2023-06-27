@@ -1,14 +1,18 @@
 .container {
   width: 200px;
 
+  a {
+    text-decoration: none;
+  }
+
   mat-card {
-      height: 140px;
-      
-      img {
-          max-width: 100%;
-          max-height: 100%;
-          object-fit: cover;
-      }
+    height: 140px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
   }
 
   mat-card-subtitle {

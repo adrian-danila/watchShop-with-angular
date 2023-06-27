@@ -1,11 +1,11 @@
 <mat-card>
   <img mat-card-image [src]="item.photos[0]" alt="black-watch" />
   <div class="card-section">
-    <mat-card-content
-      >Heading for Full Width Story Will Display Here</mat-card-content
-    >
+    <mat-card-content>{{ item.name }}</mat-card-content>
     <mat-card-actions>
-      <button class="view-more-button" mat-raised-button>View More</button>
+      <a [routerLink]="['/product-details', item.id]">
+        <button class="view-more-button" mat-raised-button>View More</button>
+      </a>
     </mat-card-actions>
   </div>
 </mat-card>
