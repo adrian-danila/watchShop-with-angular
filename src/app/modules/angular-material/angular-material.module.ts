@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [PaginatorComponent],
@@ -26,6 +27,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatTableModule,
     MatExpansionModule,
     MatSelectModule,
+    MatDividerModule,
   ],
   exports: [
     MatPaginatorModule,
@@ -38,6 +40,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatTableModule,
     MatExpansionModule,
     MatSelectModule,
+    MatDividerModule,
   ],
 })
 export class AngularMaterialModule {}

@@ -2,6 +2,7 @@
 <app-navbar></app-navbar>
 <app-searchbar></app-searchbar>
 <app-breadcrumb-menu></app-breadcrumb-menu>
+
 <div class="container-first">
   <div class="container">
     <div class="wrapper">
@@ -10,33 +11,21 @@
           <img [src]="product.photos" />
         </div>
         <div class="images">
-          <img src="/assets/images/hand-watch.png" />
-          <img src="/assets/images/hand-watch.png" />
-          <img src="/assets/images/hand-watch.png" />
-          <img src="/assets/images/hand-watch.png" />
+          <img *ngFor="let photo of product.photos?.slice(1)" [src]="photo" />
         </div>
       </div>
-
+      
       <div class="product-details">
         <h4>Details</h4>
-        <p>{{product.description}}</p>
+        <p>{{ product.description }}</p>
       </div>
-
       <div class="product-info">
         <h4>Info & Stats</h4>
       </div>
-      <app-table-info></app-table-info>
-    </div>
-    <div class="details-info">
-      <div class="wrapper-info">
-        <p>{{product.name}}</p>
-        <p>{{product.price}} lei</p>
-        <button>Add to my cart</button>
-        <p>Details</p>
-        <p>Info & Stats</p>
-      </div>
+      <!-- <app-table-info></app-table-info> -->
     </div>
   </div>
+  <app-product-details-box-info [product]="product"></app-product-details-box-info>
 </div>
 <!-- <app-section-carousel-two></app-section-carousel-two> -->
 <app-footer></app-footer>

@@ -12,6 +12,7 @@ import { ShopModule } from './modules/shop/shop.module';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     ShopModule,
     ReactiveFormsModule,
     AppRoutingModule,
+
   ],
   exports: [RouterModule],
   providers: [],

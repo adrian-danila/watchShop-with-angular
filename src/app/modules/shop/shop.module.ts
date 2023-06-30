@@ -24,6 +24,7 @@ import { BreadcrumbMenuComponent } from 'src/app/components/breadcrumb-menu/brea
 import { TableInfoComponent } from 'src/app/components/table-info/table-info.component';
 import { CardComponent } from 'src/app/components/card/card.component';
 import { CardV3Component } from 'src/app/components/card-v3/card-v3.component';
+import { ProductDetailsBoxInfoComponent } from 'src/app/components/product-details-box-info/product-details-box-info.component';
 
 const shopRoutes: Routes = [{ path: 'products', component: ProductsComponent }];
 
@@ -50,6 +51,7 @@ const shopRoutes: Routes = [{ path: 'products', component: ProductsComponent }];
     TableInfoComponent,
     CardComponent,
     CardV3Component,
+    ProductDetailsBoxInfoComponent
   ],
   imports: [
     CommonModule,
