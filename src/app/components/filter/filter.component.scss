@@ -3,9 +3,14 @@
   width: 300px;
   background-color: #f6f9fb;
   margin: 20px;
-  padding: 10px;
+  padding: 5px;
 
   .checkbox-group {
-    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    label {
+      padding-left: 5px;
+    }
   }
 }

@@ -1,5 +1,12 @@
 <div class="container">
-  <input placeholder="Search for watch brand name or model..." />
-
-  <button mat-raised-button class="button" color="accent">Search</button>
+  <form [formGroup]="searchForm" (ngSubmit)="search()">
+    <input
+      type="text"
+      placeholder="Search for watch brand name or model..."
+      formControlName="searchTerm"
+    />
+    <button mat-raised-button class="button" color="accent" type="submit">
+      Search
+    </button>
+  </form>
 </div>

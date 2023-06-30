@@ -10,6 +10,7 @@ import { DataService } from 'src/app/services/data/data.service';
 export class ProductDetailsComponent implements OnInit {
   productId: string;
   product: any;
+  fetchedData: any[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -21,6 +22,10 @@ export class ProductDetailsComponent implements OnInit {
       this.productId = params['id'];
       this.getProductDetails();
     });
+
+    this.dataService.fetchData().subscribe((data) =>{
+      this.fetchedData = data;
+    })
   }
 
   getProductDetails() {

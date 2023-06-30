@@ -8,12 +8,16 @@ import { DataService } from 'src/app/services/data/data.service';
 })
 export class ProductsComponent implements OnInit {
   fetchedData: any[] = [];
+  filteredData: any = [];
 
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     this.dataService.fetchData().subscribe((data) => {
       this.fetchedData = data;
+      this.filteredData = data;
     });
   }
 }
+
+

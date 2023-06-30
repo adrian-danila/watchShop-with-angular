@@ -10,25 +10,20 @@ import { AngularMaterialModule } from './modules/angular-material/angular-materi
 import { AuthModule } from './modules/auth/auth.module';
 import { ShopModule } from './modules/shop/shop.module';
 import { HttpClientModule } from '@angular/common/http';
-import { environment } from '../environments/environment';
-import { AngularFireModule } from '@angular/fire/compat';
+
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
     BrowserModule,
     AngularMaterialModule,
     AuthModule,
     ShopModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    AngularFireModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AppRoutingModule,
   ],
   exports: [RouterModule],
   providers: [],
