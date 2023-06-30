@@ -8,13 +8,17 @@
     <div class="wrapper">
       <div class="wrapper-images">
         <div class="big-image">
-          <img [src]="product.photos" />
+          <img [src]="selectedImage" *ngIf="selectedImage" />
         </div>
         <div class="images">
-          <img *ngFor="let photo of product.photos?.slice(1)" [src]="photo" />
+          <img
+            *ngFor="let photo of product.photos"
+            [src]="photo"
+            (click)="selectImage(photo)"
+          />
         </div>
       </div>
-      
+
       <div class="product-details">
         <h4>Details</h4>
         <p>{{ product.description }}</p>
@@ -25,7 +29,9 @@
       <!-- <app-table-info></app-table-info> -->
     </div>
   </div>
-  <app-product-details-box-info [product]="product"></app-product-details-box-info>
+  <app-product-details-box-info
+    [product]="product"
+  ></app-product-details-box-info>
 </div>
 <!-- <app-section-carousel-two></app-section-carousel-two> -->
 <app-footer></app-footer>
