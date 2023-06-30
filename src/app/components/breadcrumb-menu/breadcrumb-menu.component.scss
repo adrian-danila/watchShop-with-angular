@@ -1,10 +1,10 @@
 .container {
-    .wrapper {
-        background-color: white;
-        display: flex;
-        justify-content: center;
-    }
-    
+    // border: 1px solid red;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     p {
         width: 1000px;
     }

@@ -1,0 +1,25 @@
+table,th,td {
+    border: 1px solid var(--customGray);
+    border-collapse: collapse;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+td:first-child {
+    background-color: var(--customTableColor);
+    width: 150px;
+}
+
+td:nth-child(2){
+    width: 450px;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.info-product p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--customGray);
+    padding-top: 15px;
+}
