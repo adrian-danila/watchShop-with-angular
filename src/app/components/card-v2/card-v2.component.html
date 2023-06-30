@@ -5,7 +5,9 @@
             <mat-card-title>{{item.name }}</mat-card-title>
             <mat-card-content>Text excerpt for this content card goes here to tease users.</mat-card-content>
             <mat-card-actions>
-            <button mat-raised-button>View More</button>
+            <a routerLink="/product-details/{{item.id}}">
+                <button mat-raised-button>View details</button>
+            </a>
             </mat-card-actions>
         </div>
     </mat-card>

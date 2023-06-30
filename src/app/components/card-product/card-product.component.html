@@ -7,7 +7,7 @@
         <mat-card-title class="product-price"> {{item.price}} lei</mat-card-title>
     </div>
    <mat-card-actions class="card-actions">
-    <a [routerLink]="['/product-details', item.id]">
+    <a routerLink="/product-details/{{item.id}}">
         <button mat-flat-button class="action-button">View details</button>
     </a>
     <button mat-flat-button class="action-button">Add to cart</button>

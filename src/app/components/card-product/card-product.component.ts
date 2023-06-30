@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-product',
@@ -10,5 +10,4 @@ export class CardProductComponent {
 
   productData: any = [];
 
-  constructor() {}
 }
