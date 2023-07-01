@@ -53,14 +53,16 @@
               mat-raised-button
               color="primary"
               type="submit"
-              (click)="authService.SignUp(userEmail.value, userPwd.value)"
+              (click)="handleRegistration(userEmail.value, userPwd.value)"
             >
-              Submit
+              Register
             </button>
           </mat-card-actions>
         </div>
       </mat-card-content>
     </div>
+
+  <button class="message" mat-stroked-button *ngIf="registrationSuccess">{{message}}</button>
 
     <mat-card-footer>
       Already have an account?
