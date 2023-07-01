@@ -1,12 +1,19 @@
 {
   "projects": {
-    "default": "watchshop-a"
+    "default": "watchshop-angular-firebase"
   },
   "targets": {
     "watchshop-a": {
       "hosting": {
         "watchshop": [
           "watchshop-a"
+        ]
+      }
+    },
+    "watchshop-angular-firebase": {
+      "hosting": {
+        "watchshop": [
+          "watchshop-angular-firebase"
         ]
       }
     }

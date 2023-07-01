@@ -10,8 +10,15 @@ import { AngularMaterialModule } from './modules/angular-material/angular-materi
 import { AuthModule } from './modules/auth/auth.module';
 import { ShopModule } from './modules/shop/shop.module';
 import { HttpClientModule } from '@angular/common/http';
-
-
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,7 +32,14 @@ import { HttpClientModule } from '@angular/common/http';
     ShopModule,
     ReactiveFormsModule,
     AppRoutingModule,
-
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   exports: [RouterModule],
   providers: [],
