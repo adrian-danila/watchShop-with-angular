@@ -4,34 +4,54 @@
       <mat-card-title>Login</mat-card-title>
     </mat-card-header>
 
-    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-      <mat-card-content>
+    <div class="loginComponent">
+      <div class="formGroup">
         <mat-form-field apperance="outline" hideRequiredMarker="true">
           <mat-label>Email</mat-label>
           <input
+            class="formControl"
             matInput
             placeholder="email@example.com"
             type="email"
-            formControlName="email"
+            #userName
             required
           />
         </mat-form-field>
+      </div>
+
+      <div class="formGroup">
         <mat-form-field>
           <mat-label>Password</mat-label>
-          <input matInput type="password" formControlName="password" required />
+          <input class="formControl" matInput type="password" #userPassword required />
         </mat-form-field>
-        <mat-card-actions>
-          <button
-            class="center-button"
+      </div>
+
+      <div class="formGroup">
+        <mat-card-content>
+          <mat-card-actions>
+            <button
+              class="center-button btn googleBtn"
+              mat-raised-button
+              color="primary"
+              type="button"
+              (click)="authService.SignIn(userName.value, userPassword.value)"
+            >
+              Login
+            </button>
+<span>Or</span>
+            <button
+            class="center-button btn googleBtn"
             mat-raised-button
             color="primary"
-            type="submit"
+            type="button"
+            (click)="authService.GoogleAuth()"
           >
-            Submit
+            Login with Google
           </button>
-        </mat-card-actions>
-      </mat-card-content>
-    </form>
+          </mat-card-actions>
+        </mat-card-content>
+      </div>
+    </div>
 
     <mat-card-footer>
       Don't have an account?

@@ -1,29 +1,12 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl, Validators, Form } from '@angular/forms';
-import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginFormComponent {
-loginForm!: FormGroup;
 
-constructor(private formBuilder: FormBuilder ) {};
+constructor(public authService: AuthService) {};
 
-ngOnInit() {
-  this.loginForm = this.formBuilder.group({
-    email: new FormControl('', Validators.maxLength(100)),
-    password: new FormControl('', Validators.maxLength(100))
-  });
-}
-
-
-onSubmit(): void {
-  if(this.loginForm.invalid) {
-    return;
-  }
-
-  console.log(this.loginForm.value);
-}
 }
