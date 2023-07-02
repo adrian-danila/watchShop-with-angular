@@ -24,7 +24,7 @@ handleRegistration(email: string, password: string) {
       }, 3000); 
     },
     (error) => {
-      // Handle registration error if needed
+      // Handle registration error if neededd
     }
   );
 }
