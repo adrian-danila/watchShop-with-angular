@@ -7,6 +7,7 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
 import { ReactiveFormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from 'src/app/auth-components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from 'src/app/auth-components/verify-email/verify-email.component';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 const authRoutes: Routes = [
   { path: 'login', component: LoginFormComponent },
@@ -16,13 +17,14 @@ const authRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [LoginFormComponent, RegisterComponent],
+  declarations: [LoginFormComponent, RegisterComponent,ForgotPasswordComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(authRoutes),
     ReactiveFormsModule,
     AngularMaterialModule,
   ],
+  providers: [AuthService],
   exports: [RouterModule],
 })
 export class AuthModule {}
