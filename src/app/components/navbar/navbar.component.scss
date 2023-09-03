@@ -20,6 +20,11 @@ mat-toolbar {
     color: var(--desaturatedBlue);
   }
 
+  a:first-child {
+    text-decoration: none;
+    color: blue;
+  }
+
   span:hover,
   a:hover {
     color: var(--customGreen);
